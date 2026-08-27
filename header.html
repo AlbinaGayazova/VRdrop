@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function(m,e,t,r,i,k,a){
+        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+        m[i].l=1*new Date();
+        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110292196', 'ym');
+
+    ym(110292196, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/110292196" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRdrop</title>
+    <link rel="stylesheet" href="/owl.carousel.min.css">
+<link rel="stylesheet" href="/owl.theme.default.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="icon" href="/favicon.ico?v=2"><!-- 32×32 -->
+<meta name="keywords" content="игровой клуб Волжский, компьютерный клуб Волжский, PlayStation 5 Волжский, настольные игры Волжский, киберклуб Волжский">
+<meta name="description" content="Атмосферное игровое пространство в Волжском. VR, PS5, настольные игры, D&D и тематические вечера. пр. им. Ленина, 123Б. +7 (937) 735-07-00">
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="/owl.carousel.min.js"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<body>
+<header class="header">
+    <div class="container">
+
+        <nav class="nav">
+
+            <a href="#about" class="underline-one">О нас</a>
+
+            <a href="game.php" class="underline-one">Список игр</a>
+
+            <div class="logo">
+                <a href="/">
+                    <img src="img/logotype.png" alt="VRdrop">
+                </a>
+            </div>
+
+            <a href="#price" class="underline-one">Прайс-лист</a>
+
+            <a href="#contact" class="underline-one">Контакты</a>
+
+            <!-- burger -->
+            <button class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </nav>
+
+    </div>
+</header>
+
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a id="link-about" href="#about">О нас</a>
+
+    <a href="game.php">Список игр</a>
+
+    <a id="link-price" href="#price">Прайс-лист</a>
+
+    <a href="#contact">Контакты</a>
+
+</div>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+
+
+
+
+    <div class="btn-up btn-up_hide"></div>
+    <script>
+    const btnUp = {
+      el: document.querySelector('.btn-up'),
+      show() {
+        // удалим у кнопки класс btn-up_hide
+        this.el.classList.remove('btn-up_hide');
+      },
+      hide() {
+        // добавим к кнопке класс btn-up_hide
+        this.el.classList.add('btn-up_hide');
+      },
+      addEventListener() {
+        // при прокрутке содержимого страницы
+        window.addEventListener('scroll', () => {
+          // определяем величину прокрутки
+          const scrollY = window.scrollY || document.documentElement.scrollTop;
+          // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+          scrollY > 400 ? this.show() : this.hide();
+        });
+        // при нажатии на кнопку .btn-up
+        document.querySelector('.btn-up').onclick = () => {
+          // переместим в начало страницы
+          window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }
+      }
+    }
+    
+    btnUp.addEventListener();</script>

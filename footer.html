@@ -1,0 +1,145 @@
+<div class="map">
+    <div class="info">
+        <div class="block_head">
+            <div class="title">
+                <h2>Наши контакты<h2>
+            </div>
+        </div>
+        <div class="contacts">
+            <div class="heading">Связь с нами:</div>
+            <div class="val">
+                <a href="tel:+79377350700" class="phone">+7 (937) 735-07-00
+                </a>
+            </div>
+            <div class="val">
+
+            </div>
+        </div>
+        <div class="adres">
+            <div class="heading">Наш адрес:</div>
+            <div class="val">г. Волжский, проспект им. Ленина, 123Б</div>
+        </div>
+        <div class="vk">
+            <div class="heading">Группа ВК</div>
+            <div class="val"><a  href="https://vk.ru/vrdropvlz">https://vk.ru/vrdropvlz</a></div>
+        </div>
+        <div class="telegram">
+            <div class="heading">Телеграмм канал</div>
+            <div class="val"><a href="https://t.me/vrdropvlz">https://t.me/vrdropvlz</a></div>
+        </div>
+    </div>
+
+    <div class="map_yandex">
+        <div>
+            <iframe 
+src="https://yandex.ru/map-widget/v1/?um=constructor%3A664b74f6c235701dc698084e3b1f492fd3921b353bdc644bc2001ce67746f5ce&amp;source=constructor"
+loading="lazy"
+allowfullscreen>
+</iframe>
+        </div>
+    </div>
+</div>
+</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer-bs">
+    <div class="footer-row">
+
+        <div class="footer-brand">
+            <h2>VR DROP</h2>
+            <p>Погрузись в будущее. Клуб виртуальной<br>реальности нового поколения</p>
+            <h3>+7 (937) 735-07-00</h3>
+        </div>
+        <div class="footer-nav">
+            <h4>Навигация</h4>
+            
+                <ul class="pages">
+                    <li><a href="#price">Услуги</a></li>
+                    <li><a href="#about">О клубе</a></li>
+                    <li><a href="/game.php">Список игр</a></li>
+                    <li><a href="#event">Мероприятия</a></li>
+                </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Адрес</h4>
+            <ul>
+                <li>Волжский, ул. Ленина, 123б</li>
+                <li>График работы: 12:00-23:00</li>
+                <li>Вторник - выходной</li></ul>
+                <div class="social-href">
+                    <div><a href="https://vk.com/vrdropvlz">VK</a></div>
+                <div><a href="https://t.me/vrdropvlz">TG</a></div></div>
+            
+        </div>
+
+    </div>
+     <div class="footer-politics">
+    <hr style="    border: none; /* Убрать стандартную рамку */
+    background-color: #b700ff; /* Цвет линии */
+    height: 1px; /* Толщина линии */
+    width: 80%; /* Ширина */
+    margin: 20px auto; /* Отступы и выравнивание */">
+    <p>© 2026 VRdrop. Все права защищены.
+</div>
+    </div>
+</footer>
+
+
+<script>
+
+const burger = document.getElementById('burger');
+const mobileMenu = document.getElementById('mobileMenu');
+const overlay = document.getElementById('mobileOverlay');
+
+burger.addEventListener('click', () => {
+
+    burger.classList.toggle('active');
+
+    mobileMenu.classList.toggle('active');
+
+    overlay.classList.toggle('active');
+
+    document.body.classList.toggle('menu-open');
+});
+
+overlay.addEventListener('click', closeMenu);
+
+document.querySelectorAll('.mobile-menu a').forEach(link => {
+
+    link.addEventListener('click', closeMenu);
+});
+
+function closeMenu() {
+
+    burger.classList.remove('active');
+
+    mobileMenu.classList.remove('active');
+
+    overlay.classList.remove('active');
+
+    document.body.classList.remove('menu-open');
+}
+
+</script>
+
+
+
+</body>
+
+</html>
